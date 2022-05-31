@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Time</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap" rel="stylesheet">
+</head>
+<style>
+    
+   .container{
+       display: flex;
+       justify-content: center;
+       align-items: center;
+       font-size: 40px;
+       font-family: 'Quicksand', sans-serif;
+       position: relative;
+       top: 220px;
+       left: 300px;
+       
+   }
+   
+    .container2{
+        display: flex;
+        justify-content: center;
+        align-items:center;
+        font-size: 100px;
+        font-family: 'Quicksand', sans-serif;
+     
+        position: relative;
+        top: 250px;
+        left: 300px;
+    }
+
+</style>
+<body>
+    <span class="container"><h2>Prashant Kushwaha</h2> </span>
+        
+       <span class="container2">
+
+        <span class="box" id="dabba1"></span>
+        <span>&nbsp;:&nbsp;</span>
+        <span class="box" id="dabba2"></span>
+        <span>&nbsp;:&nbsp;</span>
+        <span class="box" id="dabba3"></span>
+    </span>
+   
+    <script>
+         var point3 = document.getElementById('dabba1');
+       setInterval(function(){
+        var dt3 = new Date();
+        point3.innerHTML = dt3.getHours();
+
+       }, 1000)  
+
+
+
+         var point2 = document.getElementById('dabba2');
+       setInterval(function(){
+        var dt2 = new Date();
+        point2.innerHTML = dt2.getMinutes();
+
+       }, 1000)  
+
+
+
+      var point = document.getElementById('dabba3');
+       setInterval(function(){
+        var dt = new Date();
+        point.innerHTML = dt.getSeconds();
+
+       }, 1000)  
+
+     /*  var now = new Date();
+       var har = now.getHours();
+       var min = now.getMinutes();
+       var sec = now.getSeconds();
+
+       
+       setInterval(function(){
+           document.getElementById('dabba1').innerText = har;
+           document.getElementById('dabba2').innerText = min;
+           document.getElementById('dabba3').innerText = sec;
+
+       }, 1000);
+
+       setInterval(function(){
+           getElementById('dabba3').innerHTML = new Date();
+       })  */
+       
+    </script>
+</body>
+</html>
